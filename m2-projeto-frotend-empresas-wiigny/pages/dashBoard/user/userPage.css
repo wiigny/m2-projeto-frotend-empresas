@@ -1,0 +1,82 @@
+#iconSite {
+    width: 15px;
+    height: 15px;
+    background-color: var(--brand100);
+    opacity: 0.5;
+    border-radius: var(--radius-50);
+}
+body{
+    height: 100vh;
+    position: relative;
+}
+
+header{
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    padding: 20px 0px;
+    background-color: var(--white-fixed);
+    border-bottom: 1px solid rgba(0,0,0, 0.20);
+}
+
+main{
+    padding-top: 100px;
+}
+
+#infoUser{
+    padding: 14px 20px;
+    border: 1px solid rgba(0,0,0, 0.20);
+}
+#infoUser img{
+    width: 100%;
+    cursor: var(--pointer);
+}
+
+#pen {
+    width: 20px;
+}
+
+#emptyList{
+    background-color: var(--gray200);
+    border: 1px solid var(--gray300);
+    height: 360px;
+}
+
+#sectionModal{
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0,0,0, 0.20);
+}
+
+#sectionModal form{
+    background: var(--white-fixed);
+    padding: 30px;
+    position: relative;
+    width: 250px;
+}
+
+#departmentName{
+    background: var(--brand100);
+    padding: 25px;
+    color: var(--white-fixed);
+}
+
+#listUserCompany{
+    background: var(--gray100);
+    height: max-content;
+    padding: 60px;
+}
+
+#listUserCompany li{
+    max-width: 30%;
+    min-width: 30%;
+    background-color: var(--white-fixed);
+    border: 1px solid var(--brand100);
+    padding: 10px;
+}

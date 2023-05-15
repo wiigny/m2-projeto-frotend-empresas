@@ -1,0 +1,135 @@
+#iconSite {
+    width: 15px;
+    height: 15px;
+    background-color: var(--brand100);
+    opacity: 0.5;
+    border-radius: var(--radius-50);
+}
+
+::-webkit-scrollbar{
+    background-color: transparent;
+    width: 5px;
+}
+::-webkit-scrollbar-thumb{
+    background-color: var(--brand100);
+}
+
+body{
+    height: 100vh;
+    position: relative;
+}
+
+header{
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    padding: 20px 0px;
+    background-color: var(--white-fixed);
+    border-bottom: 1px solid rgba(0,0,0, 0.20);
+}
+
+main{
+    padding: 160px 0px;
+}
+
+#listDepart, #listUsers, #listUserEngage{
+    background-color: var(--gray100);
+    height: 250px;
+    padding: 40px;
+    overflow: auto;
+}
+
+#listDepart li, #listUsers li{
+    background-color: var(--white-fixed);
+    border-bottom: 1px solid var(--brand100);
+    padding: 20px;
+    width: 40%;
+    height: 150px;
+}
+#listDepart li div:nth-child(2), #listUsers li div:nth-child(2){
+    height: 25px;
+}
+
+#selectDepart{
+    border-radius: 50px;
+    padding: 4px 40px;
+}
+
+.viewMore{
+    background: url(../../../assets/eye.svg);
+}
+.editDepart{
+    background: url(../../../assets/penUncolor.svg);
+}
+.deletDepart{
+    background: url(../../../assets/trash.svg);
+}
+.editDepartColor{
+    background: url(../../../assets/pen.svg);
+}
+
+.viewMore, .editDepart, .deletDepart, .editDepartColor{
+    width: 30px;
+    height: 100%;
+    border: none;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    cursor: var(--pointer);
+}
+
+
+#sectionModal{
+    position: fixed;
+    background-color: rgba(0,0,0, 0.20);
+    height: 100%;
+    width: 100%;
+    top: 0;
+    z-index: 2;
+}
+#sectionModal form, #sectionModal div{
+    width: 250px;
+    background-color: var(--white-fixed);
+    padding: 20px;
+    position: relative;
+}
+#sectionModal div{
+    width: 40%;
+    height: 15%;
+    padding: 40px 70px;
+}
+#sectionModal div button:last-child{
+    width: -webkit-fill-available;
+}
+
+#seeMore{
+    background: rgba(0,0,0, 0.20);
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+}
+#seeMore > div{
+    background-color: var(--white-fixed);
+    padding: 30px;
+}
+#seeMore > div ul{
+    height: 215px;
+}
+
+#listUserEngage li{
+    width: 30%;
+    height: 70%;
+    background-color: var(--white-fixed);
+    padding: 20px;
+}
+#listUserEngage li div:nth-child(1){
+    width: 200px;
+}
+
+#listUserEngage button{
+    border-color: var(--alert100);
+    color: var(--alert100);
+}

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link href='https://css.gg/arrow-down.css' rel='stylesheet'>
+        
+        <link rel="stylesheet" href="./styles/reset.css">
+        <link rel="stylesheet" href="./styles/globalStyles.css">
+        <link rel="stylesheet" href="./styles/positioning.css">
+        <link rel="stylesheet" href="./styles/propFlex.css">
+        <link rel="stylesheet" href="./styles/display.css">
+        <link rel="stylesheet" href="./styles/texts.css">
+        <link rel="stylesheet" href="./styles/buttons.css">
+
+        <link rel="stylesheet" href="./pages/homePage/index.css">
+
+        <link rel="shortcut icon" href="https://kenzie.com.br/favicon.jpeg" type="image/x-icon">
+
+        <script type="module" src="./pages/homePage/index.js" defer></script>
+
+        <title>FrontEnd Empresas</title>
+
+    </head>
+    <body>
+
+        <header>
+            <div class="dspl-flex justy__cont-SB align__items-center container">
+                <div class="dspl-flex gap10 align__items-center">
+                    <div id="iconSite"></div>
+                    <h1 class="text4 font-w700">Kenzie Empresas</h1>
+                </div>
+    
+                
+                <nav class="dspl-flex gap20 flex__direc-rowR">
+    
+                    <button id="hamburguer">
+                        <img src="./assets/hamburguer.svg" alt="">
+                    </button>
+                    <!-- Arrumar os buttons para ficar igual ao figma -->
+                    <button id="register" class="button2 font-w700 text6">Cadastro</button>
+                    <button id="login" class="button1 font-w700 text6">Login</button>
+    
+                </nav>
+            </div>
+        </header>
+
+        <main class="container mTop20 dspl-flex justy__cont-SB">
+            
+            <section class="imgSection">
+                <img src="./assets/homePage/imgHomePage.svg" alt="">
+            </section>
+            
+            <section>
+                <select name="" id="selectList" class="text6 font-w400"></select>
+                
+                <ul id="listCompany" class="dspl-flex gap20 align__items-center">
+                </ul>
+
+            </section>
+        </main>
+    </body>
+</html>

@@ -1,0 +1,43 @@
+.button1{
+    color: var(--brand100);
+    background-color: transparent;
+    border: 1px solid var(--brand100);
+    padding: 8px 22px;
+    cursor: var(--pointer);
+    transition: var(--animation-duration) var(--animation-type);
+    
+}
+.button1:hover{
+    opacity: 0.5;
+}
+
+
+.button2, .button4{
+    color: var(--white-fixed);
+    background-color: var(--brand100);
+    border: none;
+    padding: 9px 22px;
+    cursor: var(--pointer);
+    transition: var(--animation-duration) var(--animation-type);
+}
+.button2:hover{
+    opacity: 0.5;
+}
+
+
+.button3{
+    background-color: transparent;
+    border: none;
+    cursor: var(--pointer);
+}
+
+#buttonClose{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+.button4{
+    background-color: var(--sucess100);
+    width: fit-content; 
+}

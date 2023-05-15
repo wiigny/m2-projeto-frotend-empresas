@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <link rel="stylesheet" href="../../../styles/reset.css">
+        <link rel="stylesheet" href="../../../styles/globalStyles.css">
+        <link rel="stylesheet" href="../../../styles/positioning.css">
+        <link rel="stylesheet" href="../../../styles/inputs.css">
+        <link rel="stylesheet" href="../../../styles/propFlex.css">
+        <link rel="stylesheet" href="../../../styles/display.css">
+        <link rel="stylesheet" href="../../../styles/texts.css">
+        <link rel="stylesheet" href="../../../styles/buttons.css">
+
+        <link rel="stylesheet" href="./adminPage.css">
+
+        <link rel="shortcut icon" href="https://kenzie.com.br/favicon.jpeg" type="image/x-icon">
+
+        <script type="module" src="./adminPage.js" defer></script>
+
+        <title>FrontEnd Empresas - Admin</title>
+
+    </head>
+
+    <body>
+        <header>
+            <div class="dspl-flex justy__cont-SB align__items-center container">
+                <div class="dspl-flex gap10 align__items-center">
+                    <div id="iconSite"></div>
+                    <h2 class="text4 font-w700">Kenzie Empresas</h2>
+                </div>
+    
+                
+                <nav class="dspl-flex gap20 flex__direc-rowR">
+                    <button id="logout" class="button1 text6 font-w700">Logout</button>
+                </nav>
+            </div>
+        </header>
+
+        <main>
+
+            <section class="container dspl-flex gap20 flex__direc-column ">
+                <div id="headerDepart" class="dspl-flex justy__cont-SB align__items-center">
+                    <h2 class="text3 font-w700">Departamentos</h2>
+
+                    <select name="" class="text6 font-w400" id="selectDepart">
+                        <option value="" disabled selected hidden>Selecionar Empresa</option>
+                    </select>
+
+                    <button id="createDepart" class="button2 text6 font-w400 dspl-flex align__items-center gap10">
+                        <img src="../../../assets/cross.svg" alt="Criar">
+                        Criar
+                    </button>
+                </div>
+                <ul id="listDepart" class="dspl-flex justy__cont-SB flex-wrap gap30">
+
+                </ul>
+            </section>
+
+            <section class="container dspl-flex flex__direc-column gap10 mTop40 ">
+                <h2 class="text__align-center text3 font-w700">Usuários cadastrados</h2>
+
+                <ul id="listUsers" class="dspl-flex justy__cont-SB flex-wrap gap30">
+
+                </ul>
+            </section>
+        </main>
+    </body>
+</html>

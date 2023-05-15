@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+
+* {
+  font-family: 'Inter', sans-serif;
+}
+
+:root {
+  --brand100: #4200ff; 
+  --brand200: #3900d6; 
+  --gray100: #F8F8F8;  
+  --gray200: #E0E0E0;  
+  --gray300: #A8A8A8;  
+  --black-fixed: #000000;  
+  --white-fixed: #FFFFFF; 
+  --alert100: #CE4646;  
+  --sucess100: #4ba036;
+
+  --font-size-1: 40px;
+  --font-size-2: 36px;
+  --font-size-3: 30px;
+  --font-size-4: 28px;
+  --font-size-5: 20px;
+  --font-size-6: 18px;
+  --font-size-7: 16px;
+  
+  --font-weight-1: 100;
+  --font-weight-2: 200;
+  --font-weight-3: 300;
+  --font-weight-4: 400;
+  --font-weight-5: 500;
+  --font-weight-6: 600;
+  --font-weight-7: 700;
+  --font-weight-8: 800;
+  --font-weight-9: 900;
+
+  --line-height: 150%;
+
+  --width-fullPercent: 100%;
+  --width-halfPercent: 50%;
+
+  --width-fullvw: 100vw;
+  --width-halfvw: 50vw;
+
+  --height-fullvh: 100vw;
+  
+  --radius-1: 4px;
+  --radius-50: 50%;
+
+  --pointer: pointer;
+
+  --animation-duration: 0.4s;
+  --animation-type: ease;
+}
+
+.container{
+  width: 90vw;
+  margin: 0 auto;
+}
+
+:disabled{
+  opacity: 0.5;
+}
+
+#toasty{
+  position: fixed;
+  right: 20px;
+  bottom: 30px;
+  background: var(--white-fixed);
+  border-radius: 10px;
+  padding: 30px;
+  color: var(--sucess100);
+  z-index: 2 ;
+}
+
+#hamburguer{
+  border: none;
+  background-color: transparent;
+}
+#modalButtons{
+  justify-content: end;
+  padding: 40px 20px 0px;
+}
+#modalButtons button{
+  width: 100%;
+}
+
+@media (max-width: 700px){
+  .imgSection{
+      display: none;
+  }
+  #login{
+      display: none;
+  }
+  #register{
+      display: none;
+  }
+  #home{
+    display: none;
+  }
+}
+
+@media (min-width: 700px) {
+  #hamburguer{
+      display: none;
+  }
+  #home{
+    display: initial;
+  }
+  #login{
+      display: initial;
+  }
+  #register{
+      display: initial;
+  }
+}

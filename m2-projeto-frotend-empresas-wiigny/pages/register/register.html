@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link href='https://css.gg/arrow-down.css' rel='stylesheet'>
+        
+        <link rel="stylesheet" href="../../styles/reset.css">
+        <link rel="stylesheet" href="../../styles/globalStyles.css">
+        <link rel="stylesheet" href="../../styles/positioning.css">
+        <link rel="stylesheet" href="../../styles/inputs.css">
+        <link rel="stylesheet" href="../../styles/propFlex.css">
+        <link rel="stylesheet" href="../../styles/display.css">
+        <link rel="stylesheet" href="../../styles/texts.css">
+        <link rel="stylesheet" href="../../styles/buttons.css">
+
+        <link rel="stylesheet" href="./register.css">
+
+        <link rel="shortcut icon" href="https://kenzie.com.br/favicon.jpeg" type="image/x-icon">
+
+        <script type="module" src="./register.js" defer></script>
+
+        <title>FrontEnd Empresas - Register</title>
+
+    </head>
+    <body>
+        <header>
+            <div class="dspl-flex justy__cont-SB align__items-center container">
+                <div class="dspl-flex gap10 align__items-center">
+                    <div id="iconSite"></div>
+                    <h2 class="text4 font-w700">Kenzie Empresas</h2>
+                </div>
+    
+                
+                <nav class="dspl-flex gap20 flex__direc-rowR">
+    
+                    <button id="hamburguer">
+                        <img src="../../assets/hamburguer.svg" alt="">
+                    </button>
+                    <!-- Arrumar os buttons para ficar igual ao figma -->
+                    <button id="login" class="button2 text6 font-w700">Login</button>
+                    <button id="home" class="button1 text6 font-w700">Home</button>
+    
+                </nav>
+            </div>
+        </header>
+        <main class="dspl-flex justy__cont-center align__items-center">
+            
+            <form class="dspl-flex flex__direc-column gap10">
+                <h1 class="text1 font-w700">Cadastre-se</h1>
+
+                <input class="input1 text7 font-w400" type="text" name="text" id="text" placeholder="Seu nome">
+                
+                <input class="input1 text7 font-w400" type="email" name="email" id="email" placeholder="Seu e-mail">
+
+                <input class="input1 text7 font-w400" type="password" name="password" id="password" placeholder="Seu senha">
+                
+                <select class="input1 text7 font-w400" name="" id="professionalLevel">
+                    <option value="Nível profissional" disabled selected hidden>Nível profissional</option>
+                    <option value="Júnior">Júnior</option>
+                    <option value="Pleno">Pleno</option>
+                    <option value="Sênior">Sênior</option>
+                </select>
+                
+                <button id="registerUser" type="submit" class="button2 text6 font-w700">Cadastre-se</button>
+                <button id="resume" type="reset" onclick="history.back()" class="button1 text6 font-w700">Retornar</button>
+            </form>
+            
+        </main>
+    </body>
+</html>

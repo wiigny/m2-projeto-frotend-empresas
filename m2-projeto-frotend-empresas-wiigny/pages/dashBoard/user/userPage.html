@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <link rel="stylesheet" href="../../../styles/reset.css">
+        <link rel="stylesheet" href="../../../styles/globalStyles.css">
+        <link rel="stylesheet" href="../../../styles/positioning.css">
+        <link rel="stylesheet" href="../../../styles/inputs.css">
+        <link rel="stylesheet" href="../../../styles/propFlex.css">
+        <link rel="stylesheet" href="../../../styles/display.css">
+        <link rel="stylesheet" href="../../../styles/texts.css">
+        <link rel="stylesheet" href="../../../styles/buttons.css">
+
+        <link rel="stylesheet" href="./userPage.css">
+
+        <link rel="shortcut icon" href="https://kenzie.com.br/favicon.jpeg" type="image/x-icon">
+
+        <script type="module" src="./userPage.js" defer></script>
+
+        <title>FrontEnd Empresas - User</title>
+
+    </head>
+
+    <body>
+        <header>
+            <div class="dspl-flex justy__cont-SB align__items-center container">
+                <div class="dspl-flex gap10 align__items-center">
+                    <div id="iconSite"></div>
+                    <h2 class="text4 font-w700">Kenzie Empresas</h2>
+                </div>
+    
+                <nav class="dspl-flex gap20 flex__direc-rowR">
+                    <button id="logout" class="button1 text6 font-w700">Logout</button>
+                </nav>
+            </div>
+        </header>
+
+        <main class="container dspl-flex gap30 flex__direc-column">
+
+            <section id="infoUser" class="dspl-flex justy__cont-SB align__items-center">
+                <div class="dspl-flex flex__direc-column gap20">
+
+                    <h1 id="userName" class="text3 font-w700"></h1>
+
+                    <div class="dspl-flex gap30">
+                        <p class="text5 font-w400" id="email"></p>
+                        <p class="text5 font-w400" id="level"></p>
+                        <p class="text5 font-w400" id="department"></p>
+                    </div>
+                </div>
+
+                <div id="pen">
+                    <img src="../../../assets/pen.svg" alt="editar">
+                </div>
+            </section>
+
+            <section id="companyName">
+
+                <div id="emptyList" class="dspl-flex align__items-center justy__cont-center">
+                    <h2 class="text1 font-w700">Você ainda não foi contratado</h2>
+                </div>
+
+                <div id="departmentName" class="dspl-flex justy__cont-center gap20 dspl-none">
+                    <p class="text3 font-w700" id="nameCompany"></p>
+                    <p class="text3 font-w700">|</p>
+                    <p class="text3 font-w700" id="nameDepart"></p>
+                </div>
+
+                <ul id="listUserCompany" class="dspl-flex flex-wrap gap20">
+
+                </ul>
+            </section>
+
+        </main>
+    </body>
+</html>

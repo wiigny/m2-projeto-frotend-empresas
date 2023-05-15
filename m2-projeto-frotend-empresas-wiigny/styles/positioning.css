@@ -1,0 +1,23 @@
+.text__align-center{
+    text-align: center;
+}
+
+.p10{
+    padding: 10px;
+}
+.p20{
+    padding: 20px;
+}
+.pTop50{
+    padding-top: 50px;
+}
+
+.mTop20{
+    margin-top: 20px;
+}
+.mTop40{
+    margin-top: 40px;
+}
+.mBottom40{
+    margin-bottom: 30px;
+}
